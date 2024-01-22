@@ -1,0 +1,170 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* header {
+    background-color: #ff7171;
+    padding: 15px;
+    text-align: center;
+} */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff7171;
+    padding: 10px;
+}
+
+nav a {
+    font-family: 'Times New Roman', serif;
+    color: black;
+    font-size: large;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #ffc3e0;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+.intro-section {
+    background-image: linear-gradient(to right, #fff4b0, #ffc3e0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro-section div  {
+    width: 50%;
+}
+.intro-section div img {
+    width: 100%;
+}
+.intro-description {
+    padding: 0px 30px;
+}
+.intro-btn {
+    background-color: #ff7171;
+    color: white;
+    width: 180px;
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+}
+.explore-section {
+    background-image: linear-gradient(to right, #fff4b0, #ffc3e0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    padding-top: 80px;
+}
+
+.imgs-card1 {
+    display: flex;
+    flex-direction: column;
+}
+.images-section {
+    display: flex;
+    margin-right: 40px;
+}
+.imgs-card1 img {
+    width: 180px;
+    height: 180px;
+}
+.imgs-card2 img{
+    width: 200px;
+    height: 370px;
+    margin-left: 20px;
+}
+.card-section {
+    background-color: #ff7171;
+    color: black;
+    padding: 20px 40px;
+}
+.image {
+    margin-bottom: 10px;
+}
+.arrow {
+    margin-left: 5px;
+}
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav a {
+        margin-bottom: 5px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu-items {
+        display: none;
+    }
+
+    .menu-items.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #fff4b0;
+        z-index: 1;
+    }
+    .menu-items a {
+        padding: 15px;
+        border-bottom: 1px solid #555;
+    }
+    .intro-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    .intro-description {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+    .intro-section div  {
+        width: 100%;
+    }
+    .intro-section div img {
+        margin-top: 40px;
+    }
+    .intro-btn {
+        align-self: center !important;
+    }
+    .explore-section {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        padding-bottom: 40px;
+    }
+    .imgs-card1 img {
+        width: 120px;
+        height: 120px;
+    }
+    .imgs-card2 img{
+        width: 150px;
+        height: 250px;
+        margin-left: 20px;
+    }
+    .card-section {
+        margin-top: 20px;
+    }
+}
